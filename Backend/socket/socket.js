@@ -4,7 +4,7 @@ import Post from '../models/PostSchema.js'; // Import the Post model
 const initSocket = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "http://192.168.43.183:8081", // Use environment variable for better configuration
+      origin: "http://192.168.1.3:3000", // Use environment variable for better configuration
       methods: ["GET", "POST"],
       credentials: true,
     },
